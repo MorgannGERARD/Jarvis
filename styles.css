@@ -1,0 +1,15 @@
+section#ask {
+background-color: blue;
+width: 50%;
+float: left;
+}
+
+section#answer {
+background-color: green;
+width: 50%;
+float: left;
+}
+
+section#json {
+background-color: yellow;
+}
