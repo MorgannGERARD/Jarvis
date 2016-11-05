@@ -16,7 +16,7 @@
 #
 default: &default
   adapter: postgresql
-  encoding: unicode
+  encoding: utf8
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
@@ -24,6 +24,7 @@ default: &default
 development:
   <<: *default
   database: jarvis_development
+  username: jarvis
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -58,6 +59,7 @@ development:
 test:
   <<: *default
   database: jarvis_test
+  username: jarvis
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -80,6 +82,9 @@ test:
 #
 production:
   <<: *default
-  database: jarvis_production
-  username: jarvis
+  host: ec2-54-75-228-86.eu-west-1.compute.amazonaws.com
+  database: dej9jot6ot7bl4
+  username: dtjruygifwujtz
+  port: 5432
   password: <%= ENV['JARVIS_DATABASE_PASSWORD'] %>
+  uri: postgres://dtjruygifwujtz:OKBCp7qjOxRkbqcl5UyxmkSk03@ec2-54-75-228-86.eu-west-1.compute.amazonaws.com:5432/dej9jot6ot7bl4
