@@ -1,7 +1,7 @@
 rake db:migrate
 bundle install
 git add -A
-git commit -m "blabla"
+git commit -am "blabla"
 git push
 rails server
 rvm gemset list

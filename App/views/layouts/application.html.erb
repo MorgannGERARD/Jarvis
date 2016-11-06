@@ -1,10 +1,48 @@
 <!DOCTYPE html>
+
 <html>
+
   <head>
-    <title>Simple App du Tutoriel Ruby on Rails | <%= @titre %></title>
+    <title> Jarvis | <%= @titre %></title>
+	<meta charset="utf-8">
+	<meta name="author" content="Morgann GERARD">
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+	<style>
+	body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+	</style>
     <%= csrf_meta_tag %>
   </head>
-  <body>
-    <%= yield %>
+
+  <body class="w3-light-grey">
+
+	<!-- w3-content defines a container for fixed size centered content, and is wrapped around the whole page content-->
+	<div id="container" class="w3-content">
+
+  		<header class="w3-container w3-center w3-padding-32"> 
+  			<h1><b>I'm Jarvis</b></h1>
+  			<p>How can I help you <span class="w3-tag">Morgann</span>  ?</p>
+		</header>
+
+		<!-- Main block in prevision of responsive design -->
+		<div id="Main" class="w3-row">
+
+			<!-- Interface block -->
+			<div id="interface" class="w3-col l8 s12 w3-container w3-blue">
+    			<%= yield %>
+    		</div>
+    		<!-- json resitution -->
+    		<div id="json" class="w3-col l4 s12 w3-container w3-yellow">
+				<p>json display</p>
+			</div>
+
+		</div>
+
+    	<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+    		<p>THIS IS FOOTER</p>
+		</footer>
+
+	</div>
+
   </body>
 </html>
