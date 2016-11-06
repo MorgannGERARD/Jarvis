@@ -1,4 +1,5 @@
 rake db:migrate
+rake db:reset db:migrate
 bundle install
 git add -A
 git commit -am "blabla"
@@ -6,6 +7,9 @@ git push
 rails server
 rvm gemset list
 psql -h localhost
+
+rails generate model User name:string email:string
+rails generate controller Users new
 
 pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start
 

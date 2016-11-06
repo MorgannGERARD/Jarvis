@@ -86,5 +86,4 @@ production:
   database: dej9jot6ot7bl4
   username: dtjruygifwujtz
   port: 5432
-  password: OKBCp7qjOxRkbqcl5UyxmkSk03
-  uri: postgres://dtjruygifwujtz:OKBCp7qjOxRkbqcl5UyxmkSk03@ec2-54-75-228-86.eu-west-1.compute.amazonaws.com:5432/dej9jot6ot7bl4
+  password:
