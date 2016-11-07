@@ -80,10 +80,3 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
-production:
-  <<: *default
-  host: ec2-54-75-228-86.eu-west-1.compute.amazonaws.com
-  database: dej9jot6ot7bl4
-  username: dtjruygifwujtz
-  port: 5432
-  password:
