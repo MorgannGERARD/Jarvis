@@ -2,7 +2,7 @@ class PagesController < ApplicationController
 	protect_from_forgery
 
   def home
-  	@titre = "Accueil"
+  	@titre = "Home"
   end
   
 end
