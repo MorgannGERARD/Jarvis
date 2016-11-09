@@ -8,6 +8,10 @@ rails server
 rvm gemset list
 psql -h localhost
 
+rails generate scaffold Micropost content:string user_id:integer
+
+rails generate controller Pages home contact
+
 rails generate model User name:string email:string
 rails generate controller Users new
 
