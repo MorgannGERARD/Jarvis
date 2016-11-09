@@ -4,5 +4,9 @@ class PagesController < ApplicationController
   def home
   	@titre = "Home"
   end
+
+  def signup
+  	@titre = "Signup"
+  end
   
 end

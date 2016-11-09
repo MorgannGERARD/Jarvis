@@ -17,27 +17,24 @@
 	<!-- w3-content defines a container for fixed size centered content, and is wrapped around the whole page content-->
 	<div id="container" class="w3-content">
 
-  		<header class="w3-container w3-center w3-padding-32"> 
-  			<h1><b>I'm Jarvis</b></h1>
-  			<p>How can I help you <span class="w3-tag">Morgann</span>  ?</p>
-		</header>
+  		<%= render "pages/header" %>
 
 		<!-- Main block in prevision of responsive design -->
 		<div id="Main" class="w3-row">
 
 			<!-- Interface block -->
-			<div id="interface" class="w3-col l8 s12 w3-container w3-blue">
+			<div id="interface" class="w3-col l8 s12 w3-container w3-blue w3-round-large">
     			<%= yield %>
     		</div>
     		<!-- json resitution -->
-    		<div id="json" class="w3-col l4 s12 w3-container w3-yellow">
-				<p>json display</p>
+    		<div id="json" class="w3-col l4 s12 w3-container w3-yellow w3-round-large">
+				<%= render "pages/json" %>
 			</div>
 
 		</div>
 
-		<%= render "footer" %>
-	</div>
+		<%= render "pages/footer" %>
 
+	</div>
   </body>
 </html>
